@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "styles.css" rel = "stylesheet">
-    <title>Triangle Quiz</title>
+    <title>Area of Triangle</title>
 </head>
 <body>
 
@@ -16,39 +16,25 @@
                 <a class="link" href="/">Is Triangle?</a>
             </li>
             <li class="list-item-inline">
-                <a class="link link-active" href="quiz.html">Quiz</a>
+                <a class="link" href="quiz.html">Quiz</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">Hypotenuse</a>
+                <a class="link" href="hypotenuse.html">Hypotenuse</a>
             </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">Area</a>
+            <li class="list-item-inline link-active">
+                <a class="link" href="area.html">Area</a>
             </li>
         </ul>
     </nav>
 
     <div class = "container container-center">
-        <h1>Quiz Time</h1>
-        <form id = "quiz-form">
-            
-            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
-            <input type = "radio" name = "question-1" value="45">45°</input>
-            <input type = "radio" name = "question-1" value="90">90°</input>
-            <input type = "radio" name = "question-1" value="60">60°</input>
-
-            <hr />
-
-            <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-            <input type = "radio" name = "question-2" value="obtuse">obtuse</input>
-            <input type = "radio" name = "question-2" value="acute">acute</input>
-            <input type = "radio" name = "question-2" value="right angled">right angled</input>
-
-            <hr />
-
-        </form>
-        <button id="form-submit" class = "link link-primary" >Check Score</button>
-        <h2 id = "score-output"></h2>
-        </form>
+        <h1>Find Area</h1>
+        <label for = "input-base">Enter Base</label>
+        <input id = "input-base" type = "number" class = "input-dimensions">
+        <label for = "input-height">Enter Height</label>
+        <input id = "input-height" type = "number" class = "input-dimensions">
+        <button id = "calculate-btn" class = "link link-primary">Calculate Area</button>
+        <h2 id = "output-area"></h2>
     </div>
 
     <footer class="footer">
@@ -68,6 +54,6 @@
         </ul>
     </footer>
 
-    <script src="quiz.js" ></script>
+    <script src = "area.js"></script>
 </body>
 </html>
